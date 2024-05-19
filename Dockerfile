@@ -2,6 +2,6 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 
 EXPOSE 8888
 
-ADD target/TestProject-0.0.1-SNAPSHOT.jar app1.jar
+ADD target/app1.jar app1.jar
 
 ENTRYPOINT ["java","-jar","/app1.jar"]
