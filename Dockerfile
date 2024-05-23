@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
-EXPOSE 8888
+EXPOSE 8080
 
 ADD target/app1.jar app1.jar
 
