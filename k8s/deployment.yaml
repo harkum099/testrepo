@@ -5,7 +5,7 @@ metadata:
   labels:
     app: app1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: app1
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:7
+          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:8
           ports:
             - containerPort: 8080
           env:
@@ -34,6 +34,6 @@ spec:
     app: app1
   ports:
     - protocol: TCP
-      port: 8888
-      targetPort: 8888
+      port: 80
+      targetPort: 8080
   type: LoadBalancer
