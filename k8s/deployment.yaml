@@ -14,26 +14,11 @@ spec:
       labels:
         app: app1
       annotations:
-        eks.amazonaws.com/fargate-profile: my-eks-farget
+        eks.amazonaws.com/fargate-profile: my-fargate-profile
     spec:
       containers:
         - name: my-app-container
-          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:8
+          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:3
           ports:
             - containerPort: 8080
-          env:
-            - name: ENVIRONMENT
-              value: "dev"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: my-app-service
-spec:
-  selector:
-    app: app1
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
-  type: LoadBalancer
+          
