@@ -14,11 +14,11 @@ spec:
       labels:
         app: app1
       annotations:
-        eks.amazonaws.com/fargate-profile: my-fargate-profile
+        eks.amazonaws.com/fargate-profile: my-eks-farget-profile
     spec:
       containers:
         - name: my-app-container
-          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:3
+          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:1
           ports:
             - containerPort: 8080
           
