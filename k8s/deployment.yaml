@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:2
+          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:3
           ports:
             - containerPort: 8080
           
