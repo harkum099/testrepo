@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: example-be-app
-          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:6
+          image: 780799328195.dkr.ecr.us-east-1.amazonaws.com/eca-repo:8
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
